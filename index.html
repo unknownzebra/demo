@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hotel Advisor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="startOverlay">
+      <button id="startButton" class="btn btn-primary btn-lg">Hotels anzeigen</button>
+    </div>
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img src="assets/logo_HotelAdvisor.png" alt="Hotel Best Advice Logo" />
+        </a>
+        
+
+      </div>
+    </nav>
+
+    <div id="navbar" class="only-mobile">
+  <a href="#schmieder">Köhler</a>
+  <a href="#seidel">Kaufmann</a>
+  <a href="#schubert">Kistler</a>
+</div>
+    
+    
+    <div class="container py-5">
+      <h1 class="text-center mb-5 suchanfrage">Hotels für ihre Suchanfrage</h1>
+
+      <div class="row g-4">
+        <!-- Hotel Schmieder -->
+        <div class="col-md-6 col-lg-4 marg-top" id="schmieder">
+          <div class="card hotel-card">
+            <img src="assets/hotel_bsp_gru%CC%88n.png" class="card-img-top" alt="Hotel Schmieder" />
+
+            <div class="card-body">
+              <h5 class="card-title">Hotel Köhler</h5>
+
+              <!-- Aggregierte Sternebewertung -->
+              <div class="rating-row">
+                <div class="total-rating-box">
+                  <p class="star-rating blurred">
+                    <span class="star">4,2 <br /></span>
+                    <span class="star">★ ★ ★ ★ ☆</span>
+                  </p>
+                  <p class="total-rating blurred">
+                    <span class="total">(318)</span>
+                  </p>
+                </div>
+
+                <!-- Verteilung Sternebewertungen -->
+                <div class="total-scale blurredx5">
+                  <div class="progess-row">
+                    <p class="total-scale">5&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">4&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 58%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">3&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 24%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">2&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 5%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">1 &nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 10%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ki-box blurred">
+                <h1 class="ki-headline">Gäste sagen folgendes über das Hotel:</h1>
+                <p class="ki-text">
+                  Hier steht eine KI-Zusammenfassung der Gästerezensionen.
+                </p>
+                <p class="ki-hinweis">KI-generierte Zusammenfassung der Gästerezensionen</p>
+              </div>
+
+              <!-- Rezensionen -->
+              <div class="scrollbar">
+                <!-- Rezension 1 -->
+                <div class="reviewall">
+                  <div class="authorbox">
+                    <img src="assets/Profilbilder/noprofilepicture.png" alt="Autorbild" class="avatar blurredx5" />
+                    <div class="authorinfo">
+                      <p class="authorname blurred">Vorname Nachname</p>
+                      <p class="authorinformationzeile">
+                        <span class="authorinformation blurred">Professional Guide • &nbsp;0&nbsp;Rezensionen</span>
+                      </p>
+                      <p class="verifizierung blurred">X Aufenthalt nicht verifiziert</p>
+                      <p class="reviewdate blurred">gestern</p>
+                      <p class="reviewstar blurredx5">★ ★ ★ ★ ★</p>
+                    </div>
+                  </div>
+
+                  <div class="review">
+                    <p class="reviewtext blurred">
+                      Hier steht eine Gästerezension.
+                    </p>
+                    
+                    <p class="hilfreichzeile">
+                      Hilfreich? 👍 oder 👎 | Hilfreich <span class="hilfreich blurred">(0)</span> | ⚑ Melden
+                    </p>
+                  </div>
+
+                  <div class="corporate blurred">
+                    <div class="rating-row">
+                      <img src="assets/Hotels_Logos/Logo_Hotel_Schmieder_blau.png" alt="Logo" />
+                      <img src="assets/verifizierung.png" class="verified" alt="Verifizierung" />
+                      <p class="corporatename">Hotel Köhler</p>
+                    </div>
+                    <p class="corporatedate">gestern</p>
+                    <p class="corporatetext">
+                      Hier steht eine Antwort des Hotels.
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+
+              <a href="#" class="btn btn-primary w-100">Jetzt buchen • 89 € pro Nacht</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotel Kaufmann -->
+        <div class="col-md-6 col-lg-4 marg-top" id="seidel">
+          <div class="card hotel-card">
+            <img src="assets/hotel_bsp_rot.png" class="card-img-top" alt="Hotel Seidel" />
+
+            <div class="card-body">
+              <h5 class="card-title">Hotel Kaufmann</h5>
+
+              <div class="rating-row">
+                <div class="total-rating-box">
+                  <p class="star-rating blurred">
+                    <span class="star">4,2<br /></span>
+                    <span class="star">★ ★ ★ ★ ☆</span>
+                  </p>
+                  <p class="total-rating blurred">
+                    <span class="total">(381)</span>
+                  </p>
+                </div>
+
+                <div class="total-scale blurredx5">
+                  <div class="progess-row">
+                    <p class="total-scale">5&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">4&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 63%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">3&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 27%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">2&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 2%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">1 &nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 11%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ki-box blurred">
+                <h1 class="ki-headline">Gäste sagen folgendes über das Hotel:</h1>
+                <p class="ki-text">
+                  Hier steht eine KI-Zusammenfassung der Gästerezensionen.
+                </p>
+                <p class="ki-hinweis">KI-generierte Zusammenfassung der Gästerezensionen</p>
+              </div>
+
+                <!-- Rezension 4 -->
+                <div class="reviewall">
+                  <div class="authorbox">
+                    <img src="assets/Profilbilder/noprofilepicture.png" alt="Autorbild" class="avatar blurredx5" />
+                    <div class="authorinfo">
+                      <p class="authorname blurred">Vorname Nachname</p>
+                      <p class="authorinformationzeile">
+                        <span class="authorinformation blurred">Guide Status • &nbsp;0&nbsp;Rezensionen</span>
+                      </p>
+                      <p class="verifizierung blurred">X Aufenthalt nicht verifiziert</p>
+                      <p class="reviewdate blurred">letzten Monat</p>
+                      <p class="reviewstar blurredx5">★ ★ ★ ☆ ☆</p>
+                    </div>
+                  </div>
+
+                  <div class="review">
+                    <p class="reviewtext blurred">Hier steht eine Gästerezension.</p>
+                     <img
+                      src="assets/Hotelausstattung_Zimmer/Kopfkissen.jpg"
+                      class="usercontent blurredx10"
+                      alt="Kopfkissen" />
+                    <p class="hilfreichzeile">
+                      Hilfreich? 👍 oder 👎 | Hilfreich <span class="hilfreich blurred">(0)</span> | ⚑ Melden
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              
+              <a href="#" class="btn btn-primary w-100">Jetzt buchen • 89 € pro Nacht</a>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Hotel Kistler -->
+        <div class="col-md-6 col-lg-4 marg-top" id="schubert">
+          <div class="card hotel-card">
+            <img src="assets/Hotels_Logos/hotel1.jpg" class="card-img-top" alt="Hotel Schubert" />
+
+            <div class="card-body">
+              <h5 class="card-title">Hotel Kistler</h5>
+
+              <div class="rating-row">
+                <div class="total-rating-box">
+                  <p class="star-rating blurred">
+                    <span class="star">4,3<br /></span>
+                    <span class="star">★ ★ ★ ★ ☆</span>
+                  </p>
+                  <p class="total-rating blurred">
+                    <span class="total">(336)</span>
+                  </p>
+                </div>
+
+                <div class="total-scale blurredx5">
+                  <div class="progess-row">
+                    <p class="total-scale">5&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">4&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 55%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">3&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 40%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">2&nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 5%"></div>
+                    </div>
+                  </div>
+                  <div class="progess-row">
+                    <p class="total-scale">1 &nbsp;&nbsp;</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 17%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ki-box blurred">
+                <h1 class="ki-headline">Gäste sagen folgendes über das Hotel:</h1>
+                <p class="ki-text">
+                  Hier steht eine KI-Zusammenfassung der Gästerezensionen.
+                </p>
+                <p class="ki-hinweis">KI-generierte Zusammenfassung der Gästerezensionen</p>
+              </div>
+
+              <div class="scrollbar">
+                <!-- Rezension 1 -->
+                <div class="reviewall">
+                  <div class="authorbox">
+                    <img src="assets/Profilbilder/noprofilepicture.png" alt="Autorbild" class="avatar blurredx5" />
+                    <div class="authorinfo">
+                      <p class="authorname blurred">Vorname Nachname</p>
+                      <p class="authorinformationzeile">
+                        <span class="authorinformation blurred">Guide Status • &nbsp;0&nbsp;Rezensionen</span>
+                      </p>
+                      <p class="verifizierung blurred">✓ verifizierter Aufenthalt</p>
+                      <p class="reviewdate blurred">diese Woche</p>
+                      <p class="reviewstar blurredx5">★ ★ ★ ★ ★</p>
+                    </div>
+                  </div>
+
+                  <div class="review">
+                    <p class="reviewtext blurred">Hier steht eine Gästerezension.</p>
+                    <p class="hilfreichzeile">
+                      Hilfreich? 👍 oder 👎 | Hilfreich <span class="hilfreich blurred">(0)</span> | ⚑ Melden
+                    </p>
+                  </div>
+                </div>
+
+              <a href="#" class="btn btn-primary w-100">Jetzt buchen • 89 € pro Nacht</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button id="endButton" style="display: none">Fenster schließen</button>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+  </body>
+</html>
